@@ -75,7 +75,7 @@ if (isset($_SESSION["admin"])) {
                                         <input type="date" id="m2" class="form-control">
                                     </div>
                                     <div class="col-12 col-md-4 mt-2">
-                                        <button class="btn btn-primary btn-user btn-block mt-4" onclick="">
+                                        <button class="btn btn-primary btn-user btn-block mt-4" onclick="generate();">
                                             Generate
                                         </button>
                                     </div>

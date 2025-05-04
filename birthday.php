@@ -169,7 +169,7 @@ WHERE `assigned_services`.`services_id` IS NULL
             </div>
             <div class="row">
                 <div class="col-4 offset-4 p-3 d-grid">
-                    <button class="btn btn-primary btn-user btn-block" onclick="">
+                    <button class="btn btn-primary btn-user btn-block" onclick="submit_birth_quote(<?php echo $result['id']; ?>);">
                         Submit Quote
                     </button>
                 </div>

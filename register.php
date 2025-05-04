@@ -46,6 +46,7 @@
                                                 <select class=" text-center form-control " id="category" placeholder="Select User Type">
                                                     <option value="0">Select user type</option>
                                                     <option value="1">Customer</option>
+                                                    <option value="2">Vendor</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">

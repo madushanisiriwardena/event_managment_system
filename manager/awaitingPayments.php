@@ -72,7 +72,7 @@ if (isset($_SESSION["manager"])) {
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $resultset = Database::search("SELECT * FROM `quote_services` WHERE `vendor_status_id` = '5' ORDER BY `id` DESC");
+                                            $resultset = Database::search("SELECT * FROM `quote_services` WHERE `vendor_status_id` = '5' OR `vendor_status_id` = '7' ORDER BY `id` DESC");
                                             $n = $resultset->num_rows;
                                             for ($x = 0; $x < $n; $x++) {
                                                 $a = $resultset->fetch_assoc();

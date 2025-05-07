@@ -74,7 +74,7 @@ if (isset($_SESSION["vendor"])) {
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $resultset = Database::search("SELECT * FROM `quote_services` WHERE `vendors_id`='".$vendor."' AND `vendor_status_id` = '8' OR `vendor_status_id` = '9' ORDER BY `id` DESC");
+                                            $resultset = Database::search("SELECT * FROM `quote_services` WHERE `vendors_id` = '".$vendor."' AND (`vendor_status_id` = '8' OR `vendor_status_id` = '9') ORDER BY `id` DESC");
                                             $n = $resultset->num_rows;
                                             for ($x = 0; $x < $n; $x++) {
                                                 $a = $resultset->fetch_assoc();

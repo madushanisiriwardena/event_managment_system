@@ -1,0 +1,4 @@
+$rs3 = Database::search("SELECT DISTINCT v.id, v.fname, v.lname
+FROM vendors v
+LEFT JOIN quote_services qs ON v.id = qs.vendors_id AND qs.appointment_date = '".$a["appointment_date"]."'
+WHERE qs.vendors_id IS NULL AND v.id != '1';");
